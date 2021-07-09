@@ -3,11 +3,17 @@ body{
     margin: 0;
 }
 
+h1{
+    font-size: 40px;
+}
+
+
+
 .red-color{
     color: red;
 }
 
-section{
+.flex-container{
     display: flex;
     margin-bottom: 100px;
 }
@@ -15,11 +21,16 @@ section{
 .half-width{
     width: 50%;
     padding: 2%;
+   
 }
 .half-width img{
     width: 80%;
 }
 .link-button{
+    /* anchor tag is an inline tag. Thus it doesn'r show top or bottom  margin. to make it work, it's display is turned into inline-block.*/
+
+    display: inline-block;      
+    margin-top: 10px;
     padding: 10px 40px;
     text-decoration: none;
     background-image: linear-gradient(orange, red);
@@ -35,4 +46,37 @@ section{
     background-image: url(images/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right;
+}
+.experience-area{
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.experience-item{
+    width: 30%;
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10;
+    box-shadow: 10px 30px 20px grey;
+    border-radius: 10px;
+}
+#full-stack-experience{
+    border-left: 10px solid;
+    border-image: linear-gradient(blue, cyan);
+    border-image-slice: 1;
+}
+
+#baby-experience{
+    border-left: 10px solid;
+    border-image: linear-gradient(orange, pink);
+    border-image-slice: 1;
+}
+
+footer{
+    text-align: center;
+    background-color: thistle;
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
